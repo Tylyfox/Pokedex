@@ -1,18 +1,8 @@
 import "../App.css";
 
-const pokemonList = [
-    {
-        name: "Bulbasaur",
-        imgSrc: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
-    },
-    {
-        name: "mew",
-    }
-]
 
-function PokemonCard () {
-    const pokemon = pokemonList[0];
-
+function PokemonCard ({pokemon}: PokemonCardProps) {
+    console.log(pokemon)
     return (
         <figure className="card">
             {
